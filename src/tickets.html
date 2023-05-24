@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="tickets-page">
+    <header>
+        <div class="box-logo-cart">
+            <a href="index.html">
+            <img src="assets/img/fun-park.png" class="logo-img" width="70" height="auto" alt="FunPark - logo"></a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon-cart"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+        </div>
+    </header>
+    <div class="tickets-photo">
+        <img src="assets/img/heaven-3058606.jpg" alt="Zdjęcie roller-coastera" class="background-img">
+    </div>
+    <div class="tickets-content">
+        <div class="tickets-content-box">
+            <h1 class="tickets-content-box-title">Bilety online</h1>
+            <p class="tickets-content-box-text">Kup bilety online i oszczędź czas na zakupach w kasie. Bilety online są tańsze niż w kasie parku rozrywki.</p>
+                <div class="ticket-select-box">
+                    <div class="calendar" id="ticket-calendar">
+                        <p class="ticket-select-box-text">Wybierz datę: </p>
+                        <input type="date" id="ticket-datepicker">
+                    </div>
+                <div class="ticket-select">
+                    <div class="ticket-select-variant">
+                        <div class="ticket-select-box-title">
+                            <h2 class="ticket-select-box-text">Bilety dostępne w dniu <span id="selected-date" placeholder="Wybierz datę z kalendarza powyżej"></span>:</h2>
+                        </div>
+                        <div class="ticket-select-box-price">
+                            <div class="type-price">
+                                <p class="ticket-type">Bilet (wiek 12-59)</p>
+                                <p class="ticket-price" data-type="adult">Cena:  0 PLN </p>
+                            </div>
+                            <div class="ticket-number">
+                                <button class="btn-minus">-</button>
+                                <p id="counter-adult">0</p>
+                                <button class="btn-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="ticket-select-box-price">
+                            <div class="type-price">
+                                <p class="ticket-type">Bilet (wiek 4-11 i 60+)</p>
+                                <p class="ticket-price" data-type="child">Cena: 0 PLN </p>
+                            </div>
+                            <div class="ticket-number">
+                                <button class="btn-minus">-</button>
+                                <p id="counter-child">0</p>
+                                <button class="btn-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="ticket-select-box-price">
+                            <div class="type-price">
+                                <p class="ticket-type">Bilet (wiek 0-3)</p>
+                                <p class="ticket-price"data-type="infants">Cena:  0 PLN </p>
+                            </div>
+                            <div class="ticket-number">
+                                <button class="btn-minus">-</button>
+                                <p id="counter-infants">0</p>
+                                <button class="btn-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="ticket-select-box-price">
+                            <div class="type-price">
+                                <p class="ticket-type">Bilet (osoby specjalnymi potrzebami)*</p>
+                                <p class="ticket-price" data-type="special">Cena:  0 PLN </p>
+                            </div>
+                            <div class="ticket-number">
+                                <button class="btn-minus">-</button>
+                                <p id="counter-special">0</p>
+                                <button class="btn-plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+
+        
+        
+        <script src="tickets.js"></script>
+</body>
+</html>
