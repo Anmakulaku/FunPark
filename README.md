@@ -8,3 +8,7 @@ Design of a website that allows you to buy tickets to an amusement park.
   <li>SCSS</li>
   <li>JavaScript</li>
 </ul>
+
+ # Live:
+
+https://anmakulaku.github.io/FunPark/
