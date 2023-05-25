@@ -24,7 +24,7 @@ document.addEventListener("click", (event) => {
 });
 
 function openImage() {
-    window.open('assets/img/map-149152.png', '_blank');
+    window.open('src/assets/img/map-149152.png', '_blank');
 }
 
 const apiKey = '56b45d6534ae7c7f47da5b28a24be9ad';

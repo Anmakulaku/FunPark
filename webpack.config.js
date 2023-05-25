@@ -33,16 +33,16 @@ module.exports = {
         //     filename: "kontakt.html"
         // }),
         new MiniCssExtractPlugin(),
-        // new CopyWebpackPlugin({
-        //     patterns: [
-        //         {
-        //             from: "./src/assets/**",
-        //             to() {
-        //                 return "assets/img/[name][ext]";
-        //             },
-        //         }
-        //     ],
-        // }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: "./src/assets/**",
+                    to() {
+                        return "assets/img/[name][ext]";
+                    },
+                }
+            ],
+        }),
     ],
     module: {
         rules: [{
